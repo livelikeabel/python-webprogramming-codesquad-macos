@@ -37,4 +37,4 @@ def vote(request, question_id):
         return redirect('polls:results', pk = question.id)
 
 def main(request):
-    return HttpResponse("<h1>Hello, Codesquad</h1>")
+    return render(request, 'polls/main.html')
